@@ -2,7 +2,7 @@
   "name": "callback2stream",
   "version": "0.1.0",
   "description": "Transform sync, async or generator function to Stream. Correctly handle errors and optional arguments.",
-  "repository": "tunnckoCore/callback2stream",
+  "repository": "hybridables/callback2stream",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
   "precommit.silent": true,
   "main": "index.js",
