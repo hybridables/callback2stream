@@ -1,6 +1,6 @@
 {
   "name": "callback2stream",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform sync, async or generator function to Stream. Correctly handle errors and optional arguments.",
   "repository": "hybridables/callback2stream",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
