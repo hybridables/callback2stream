@@ -35,6 +35,10 @@
     ],
     "lint": {
       "reflinks": true
-    }
+    },
+    "reflinks": [
+      "promise2stream",
+      "through2"
+    ]
   }
 }

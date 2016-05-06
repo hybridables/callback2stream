@@ -16,6 +16,43 @@ npm i callback2stream --save
 const callback2stream = require('callback2stream')
 ```
 
+### [callback2stream](index.js#L51)
+> Create a stream from sync, async or generator function.
+
+**Params**
+
+* `fn` **{Function}**: Any kind of function.    
+* `opts` **{Object}**: Directly passed to [through2][] from [promise2stream][].    
+* `returns` **{Stream}**: Transform stream, coming from [promise2stream][], using [through2][].  
+
+**Example**
+
+```js
+var fs = require('fs')
+var cb2stream = require('callback2stream')
+
+var readFileStream = cb2stream(fs.readFile)
+var stream = readFileStream('package.json', 'utf8')
+stream
+  .on('data', function (val) {
+    var json = JSON.parse(val)
+    console.log(json.name) // => 'callback2stream'
+  })
+  .once('error', console.error)
+  .once('end', function () {
+    console.log('reading finished')
+  })
+
+// you also have access to the
+// contents with promise
+stream.promise
+  .then(JSON.parse, console.error)
+  .then(function (val) {
+    console.log(val.name) // => 'callback2stream'
+  }, console.error)
+  .catch(console.error)
+```
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/hybridables/callback2stream/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
@@ -23,6 +60,9 @@ But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) 
 ## [Charlike Make Reagent](http://j.mp/1stW47C) [![new message to charlike][new-message-img]][new-message-url] [![freenode #charlike][freenode-img]][freenode-url]
 
 [![tunnckoCore.tk][author-www-img]][author-www-url] [![keybase tunnckoCore][keybase-img]][keybase-url] [![tunnckoCore npm][author-npm-img]][author-npm-url] [![tunnckoCore twitter][author-twitter-img]][author-twitter-url] [![tunnckoCore github][author-github-img]][author-github-url]
+
+[promise2stream]: https://github.com/hybridables/promise2stream
+[through2]: https://github.com/rvagg/through2
 
 [npmjs-url]: https://www.npmjs.com/package/callback2stream
 [npmjs-img]: https://img.shields.io/npm/v/callback2stream.svg?label=callback2stream
