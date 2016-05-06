@@ -53,6 +53,18 @@ stream.promise
   .catch(console.error)
 ```
 
+## Related
+* [letta](https://www.npmjs.com/package/letta): Let's move to promises! Drop-in replacement for `co@4` (passing 100% tests), but… [more](https://www.npmjs.com/package/letta) | [homepage](https://github.com/hybridables/letta)
+* [limon](https://www.npmjs.com/package/limon): The pluggable JavaScript lexer. Limon = Lemon. | [homepage](https://github.com/limonjs/limon)
+* [postjson](https://www.npmjs.com/package/postjson): Transforming JSON with plugins. | [homepage](https://github.com/postjson/postjson)
+* [promise2stream](https://www.npmjs.com/package/promise2stream): Transform ES2015 Promise to Stream - specifically, Transform Stream using… [more](https://www.npmjs.com/package/promise2stream) | [homepage](https://github.com/hybridables/promise2stream)
+* [promise2thunk](https://www.npmjs.com/package/promise2thunk): Convert (transform) promise to thunk, just like was in co@3 | [homepage](https://github.com/tunnckocore/promise2thunk)
+* [relike](https://www.npmjs.com/package/relike): Simple promisify a callback-style function with sane defaults. Support promisify-ing sync functions. | [homepage](https://github.com/hybridables/relike)
+* [stream-from-promise](https://www.npmjs.com/package/stream-from-promise): Create streams from promises | [homepage](https://github.com/schnittstabil/stream-from-promise)
+* [stream-to-promise](https://www.npmjs.com/package/stream-to-promise): Convert streams (readable or writable) to promises | [homepage](https://github.com/bendrucker/stream-to-promise)
+* [through2](https://www.npmjs.com/package/through2): A tiny wrapper around Node streams2 Transform to avoid explicit subclassing noise | [homepage](https://github.com/rvagg/through2)
+* [thunk2promise](https://www.npmjs.com/package/thunk2promise): Transform or convert thunk to Bluebird Promise. | [homepage](https://github.com/tunnckocore/thunk2promise)
+
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/hybridables/callback2stream/issues/new).  
 But before doing anything, please read the [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.

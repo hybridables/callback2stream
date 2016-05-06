@@ -24,21 +24,60 @@
     "index.js"
   ],
   "keywords": [
-    "callback2stream"
+    "args",
+    "arguments",
+    "async",
+    "asynchronous",
+    "callback",
+    "callback-stream",
+    "cb",
+    "correct",
+    "create",
+    "fn",
+    "function",
+    "generator",
+    "generators",
+    "letta",
+    "make",
+    "optional",
+    "promisify",
+    "relike",
+    "stream",
+    "streamify",
+    "sync",
+    "synchronous",
+    "to",
+    "to-stream",
+    "tranform",
+    "value"
   ],
   "verb": {
-    "run": true,
-    "toc": false,
-    "layout": "empty",
-    "tasks": [
-      "readme"
-    ],
-    "lint": {
-      "reflinks": true
-    },
     "reflinks": [
       "promise2stream",
       "through2"
-    ]
+    ],
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "lint": {
+      "reflinks": true
+    },
+    "tasks": [
+      "readme"
+    ],
+    "related": {
+      "list": [
+        "promise2stream",
+        "stream-from-promise",
+        "stream-to-promise",
+        "through2",
+        "promise2thunk",
+        "thunk2promise",
+        "letta",
+        "relike",
+        "limon",
+        "postjson"
+      ]
+    }
   }
 }
