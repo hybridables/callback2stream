@@ -58,6 +58,21 @@
       "promise2stream",
       "through2"
     ],
+    "related": {
+      "list": [
+        "letta",
+        "limon",
+        "postjson",
+        "promise2stream",
+        "promise2thunk",
+        "relike",
+        "stream-from-promise",
+        "stream-to-promise",
+        "through2",
+        "thunk2promise",
+        "value2stream"
+      ]
+    },
     "run": true,
     "toc": false,
     "layout": "empty",
@@ -66,20 +81,6 @@
     },
     "tasks": [
       "readme"
-    ],
-    "related": {
-      "list": [
-        "promise2stream",
-        "stream-from-promise",
-        "stream-to-promise",
-        "through2",
-        "promise2thunk",
-        "thunk2promise",
-        "letta",
-        "relike",
-        "limon",
-        "postjson"
-      ]
-    }
+    ]
   }
 }
