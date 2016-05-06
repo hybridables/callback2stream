@@ -7,9 +7,7 @@
 
 'use strict'
 
-var letta = require('letta')
-var handle = require('handle-arguments')
-var promise2stream = require('promise2stream')
+var utils = require('./utils')
 
 /**
  * > Create a stream from sync, async or generator function.
@@ -51,8 +49,8 @@ var promise2stream = require('promise2stream')
 module.exports = function callback2stream (fn, opts) {
   var self = this
   return function () {
-    var argz = handle(arguments)
-    var promise = letta.apply(this || self, [fn].concat(argz.args))
-    return promise2stream(promise, opts)
+    var argz = utils.handle(arguments)
+    var promise = utils.letta.apply(this || self, [fn].concat(argz.args))
+    return utils.promise2stream(promise, opts)
   }
 }
