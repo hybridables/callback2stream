@@ -106,13 +106,11 @@ test('should handle async errors correctly (fs.readFile ENOENT)', function (done
 
 test('should handle sync errors correctly (fs.readFileSync ENOENT)', function (done) {
   var syncError = callback2stream(fs.readFileSync)
-  syncError('not exist', 'utf8')
-    .once('error', function (err) {
-      test.ifError(!err)
-      test.strictEqual(err instanceof Error, true)
-      test.strictEqual(err.code, 'ENOENT')
-      done()
-    })
+  syncError('not exist', 'utf8').once('error', function (err) {
+    test.strictEqual(err instanceof Error, true)
+    test.strictEqual(/no such file or directory, open/.test(err.message), true)
+    done()
+  })
 })
 
 test('should handle json parse error', function (done) {
