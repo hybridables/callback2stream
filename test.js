@@ -12,6 +12,13 @@ var test = require('mukla')
 var callback2stream = require('./index')
 var isBuffer = require('is-buffer')
 
+test('should always return a function', function (done) {
+  test.strictEqual(typeof callback2stream(), 'function')
+  test.strictEqual(typeof callback2stream(123), 'function')
+  test.strictEqual(typeof callback2stream('abc'), 'function')
+  done()
+})
+
 test('should create stream from async function (fs.readFile)', function (done) {
   var readFile = callback2stream(fs.readFile)
   var stream = readFile('./package.json', 'utf8')

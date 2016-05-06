@@ -16,14 +16,14 @@ npm i callback2stream --save
 const callback2stream = require('callback2stream')
 ```
 
-### [callback2stream](index.js#L51)
+### [callback2stream](index.js#L50)
 > Create a stream from sync, async or generator function.
 
 **Params**
 
 * `fn` **{Function}**: Any kind of function.    
 * `opts` **{Object}**: Directly passed to [through2][] from [promise2stream][].    
-* `returns` **{Stream}**: Transform stream, coming from [promise2stream][], using [through2][].  
+* `returns` **{Function}**: That when executed, returns transform stream, coming from [promise2stream][], using [through2][].  
 
 **Example**
 

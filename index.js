@@ -42,7 +42,8 @@ var utils = require('./utils')
  *
  * @param  {Function} `fn` Any kind of function.
  * @param  {Object} `opts` Directly passed to [through2][] from [promise2stream][].
- * @return {Stream} Transform stream, coming from [promise2stream][], using [through2][].
+ * @return {Function} That when executed, returns transform stream,
+ *                    coming from [promise2stream][], using [through2][].
  * @api public
  */
 
