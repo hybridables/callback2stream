@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "handle-arguments": "^3.1.0",
-    "lazy-cache": "^2.0.1",
+    "lazy-cache": "2.0.1",
     "letta": "^0.5.2",
     "promise2stream": "^1.0.0"
   },
